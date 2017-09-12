@@ -36,7 +36,8 @@ public class Scrape {
         desiredCaps = new DesiredCapabilities();
         desiredCaps.setJavascriptEnabled(true);
         desiredCaps.setCapability("takesScreenshot", false);
-        desiredCaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "/usr/local/bin/phantomjs");
+        //desiredCaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "/usr/local/bin/phantomjs");
+        desiredCaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "phantomjs");
         desiredCaps.setCapability(PhantomJSDriverService.PHANTOMJS_PAGE_CUSTOMHEADERS_PREFIX + "User-Agent", USER_AGENT);
 
         ArrayList<String> cliArgsCap = new ArrayList();
